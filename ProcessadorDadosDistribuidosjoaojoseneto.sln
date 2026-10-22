@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37710.0 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProcessadorDadosDistribuidosjoaojoseneto", "ProcessadorDadosDistribuidosjoaojoseneto\ProcessadorDadosDistribuidosjoaojoseneto.csproj", "{FC8DF49E-C681-455F-8CE0-CF36A858D234}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProcessadorDadosDistribuidosjoaojoseneto.Client", "ProcessadorDadosDistribuidosjoaojoseneto.Client\ProcessadorDadosDistribuidosjoaojoseneto.Client.csproj", "{C9BABCD6-A24E-4C99-A50B-D307CF3FB913}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC8DF49E-C681-455F-8CE0-CF36A858D234}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC8DF49E-C681-455F-8CE0-CF36A858D234}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC8DF49E-C681-455F-8CE0-CF36A858D234}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC8DF49E-C681-455F-8CE0-CF36A858D234}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9BABCD6-A24E-4C99-A50B-D307CF3FB913}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9BABCD6-A24E-4C99-A50B-D307CF3FB913}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9BABCD6-A24E-4C99-A50B-D307CF3FB913}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9BABCD6-A24E-4C99-A50B-D307CF3FB913}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DC74C0A8-4058-4D92-9737-F019385D9386}
+	EndGlobalSection
+EndGlobal

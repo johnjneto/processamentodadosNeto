@@ -1,0 +1,55 @@
+{
+  "name": "wagering-ledger-api",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "bun run src/main.ts",
+    "start:dev": "bun --watch run src/main.ts",
+    "start:worker": "bun run src/main.ts",
+    "migration:create": "bunx mikro-orm migration:create",
+    "migration:up": "bunx mikro-orm migration:up",
+    "migration:down": "bunx mikro-orm migration:down",
+    "test": "bun test test/unit",
+    "test:unit": "bun test test/unit",
+    "test:integration": "bun test test/integration",
+    "test:concurrency": "bun test test/concurrency",
+    "test:all": "bun test",
+    "typecheck": "bunx tsc --noEmit"
+  },
+  "dependencies": {
+    "@aws-sdk/client-sqs": "^3.1155.0",
+    "@mikro-orm/core": "^7.2.5",
+    "@mikro-orm/migrations": "^7.2.5",
+    "@mikro-orm/nestjs": "^7.1.0",
+    "@mikro-orm/postgresql": "^7.2.5",
+    "@mikro-orm/reflection": "^7.2.5",
+    "@nestjs/common": "^12.2.0",
+    "@nestjs/config": "^12.0.1",
+    "@nestjs/core": "^12.2.0",
+    "@nestjs/platform-express": "^12.2.0",
+    "@nestjs/schedule": "^12.0.2",
+    "@nestjs/terminus": "^12.1.0",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.15.1",
+    "decimal.js": "^10.6.0",
+    "nestjs-pino": "^5.3.1",
+    "pino-http": "^11.0.0",
+    "pino-pretty": "^13.2.0",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.2",
+    "uuid": "^14.0.3"
+  },
+  "devDependencies": {
+    "@mikro-orm/cli": "^7.2.5",
+    "@nestjs/testing": "^12.2.0",
+    "@types/bun": "latest",
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.5",
+    "@types/uuid": "^10.0.0",
+    "typescript": "5.9.3"
+  },
+  "mikro-orm": {
+    "useTsNode": false,
+    "configPaths": ["./src/infrastructure/persistence/mikro-orm.config.ts"]
+  }
+}

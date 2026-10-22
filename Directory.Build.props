@@ -1,0 +1,13 @@
+<Project>
+  <!--
+    Evita o limite MAX_PATH (260) do Windows: o caminho completo até
+    *.GeneratedMSBuildEditorConfig.editorconfig ultrapassa 260 caracteres
+    com a estrutura atual de pastas + nomes longos dos projetos.
+  -->
+  <PropertyGroup>
+    <_ShortBuildRoot>$(USERPROFILE)\.pdd-build\$(MSBuildProjectName)\</_ShortBuildRoot>
+    <BaseIntermediateOutputPath>$(_ShortBuildRoot)obj\</BaseIntermediateOutputPath>
+    <BaseOutputPath>$(_ShortBuildRoot)bin\</BaseOutputPath>
+    <MSBuildProjectExtensionsPath>$(_ShortBuildRoot)obj\</MSBuildProjectExtensionsPath>
+  </PropertyGroup>
+</Project>
